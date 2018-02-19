@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box
+}
+body {
+  font-family: sans-serif;
+  margin: 0 auto;
+  padding: 50px 20px;
+  min-height: 500px;
+  color: #4a4a4a;
+}
+header, footer, aside, section {
+  margin: 0 auto;
+  background-color: #d8d8d8;
+  border: 1px solid #9f9f9f;
+  width: 480px;
+  height: 125px;
+  padding: 20px;
+}
+p.mobile, p.desktop {
+text-align: center;
+}
+.desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 800px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+}
