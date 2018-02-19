@@ -2,7 +2,8 @@
   box-sizing: border-box
 }
 body {
-  font-family: sans-serif;
+  width: 480px;
+  font-family: 'Roboto', sans-serif;
   margin: 0 auto;
   padding: 50px 20px;
   min-height: 500px;
@@ -12,13 +13,39 @@ header, footer, aside, section {
   margin: 0 auto;
   background-color: #d8d8d8;
   border: 1px solid #9f9f9f;
-  width: 480px;
   height: 125px;
-  padding: 20px;
+  padding: 10px 15px;
+}
+header {
+  height: 75px;
+}
+aside {
+  height: 150px;
+}
+aside p.mobile {
+  margin-top: 35px;
+}
+section p.mobile {
+  margin-top: 25px;
+}
+section.half-wide {
+  width: 220px;
+  height: 250px;
+  float: left;
+}
+.half-wide p.mobile {
+  margin-top: 80px;
+}
+footer {
+  clear: both;
+}
+footer p.mobile {
+  margin-top: 25px;
 }
 p.mobile, p.desktop {
 text-align: center;
 }
+
 .desktop {
   display: none;
 }
